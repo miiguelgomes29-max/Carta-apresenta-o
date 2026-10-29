@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Apresentação - Miguel Almeida Gomes</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e8e8e8;
+            color: #222;
+            padding: 40px 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .letter-container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 5px 25px #00000020;
+        }
+
+        .header {
+            border-bottom: 2px solid #26313b;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #26313b;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            color: #555;
+            font-size: 13px;
+        }
+
+        .date {
+            margin-bottom: 30px;
+            text-align: right;
+            color: #555;
+        }
+
+        .salutation {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .body-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .closing {
+            margin-top: 40px;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #26313b;
+        }
+
+        /* BOTÃO PDF */
+        .buttons {
+            text-align: center;
+            margin: 0 auto 20px;
+        }
+
+        button {
+            background: #26313b;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #405263;
+        }
+
+        /* IMPRESSÃO / PDF */
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .letter-container {
+                box-shadow: none;
+                padding: 15mm 20mm;
+                max-width: none;
+            }
+            .buttons {
+                display: none;
+            }
+        }
+
+        /* TELEMÓVEIS */
+        @media screen and (max-width: 600px) {
+            .letter-container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="buttons">
+        <button onclick="window.print()">Descarregar Carta em PDF</button>
+    </div>
+
+    <div class="letter-container">
+        <header class="header">
+            <h1 class="name">Miguel Almeida Gomes</h1>
+            <div class="contact-info">
+                Cantanhede | +351 962 839 930 | miiguel.gomes29@gmail.com
+            </div>
+        </header>
+
+        <div class="date">
+            Cantanhede, 29 de outubro de 2026
+        </div>
+
+        <div class="salutation">
+            Exmo(a). Senhor(a),
+        </div>
+
+        <div class="body-text">
+            <p>
+                Escrevo para apresentar a minha candidatura a uma oportunidade de estágio ou posição de nível inicial na área de Tecnologias de Informação. Sou atualmente estudante do curso profissional de Técnico de Gestão e Programação de Sistemas Informáticos (TGPSI) na Escola Técnico Profissional de Cantanhede.
+            </p>
+            <p>
+                Durante a minha formação, tenho desenvolvido competências práticas na criação de aplicações web (HTML, CSS, JavaScript, PHP) e na gestão de bases de dados (MySQL). Além dos projetos escolares, destaco a minha recente experiência como voluntário no evento Street Gaming, onde apoiei a organização e logística. Esta oportunidade permitiu-me lidar diretamente com o público e reforçar a minha capacidade de colaboração em ambientes dinâmicos.
+            </p>
+            <p>
+                Sou uma pessoa bastante sociável e de fácil trato, com um forte sentido de trabalho em equipa. O meu principal objetivo neste momento é integrar um ambiente profissional onde possa aplicar o que já aprendi, evoluir rapidamente na prática e dar um contributo real à equipa através do meu empenho e vontade de trabalhar.
+            </p>
+            <p>
+                Agradeço desde já a atenção dispensada à minha candidatura e ao meu currículo em anexo. Coloco-me à inteira disposição para uma entrevista, onde poderei detalhar o meu perfil e motivação.
+            </p>
+        </div>
+
+        <div class="closing">
+            Com os melhores cumprimentos,<br>
+            <div class="signature">Miguel Almeida Gomes</div>
+        </div>
+    </div>
+
+</body>
+</html>
